@@ -1,0 +1,222 @@
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: var(--light-grayish-blue);
+}
+.bold{
+    font-weight: bold;
+}
+.light{
+    font-weight: lighter;
+}
+.c-vdgb{
+    color: var(--very-dark-grayish-blue);
+}
+.c-ddb{
+    color: var(--desaturated-dark-blue);
+}
+.c-lgb{
+    color: var(--light-grayish-blue);
+}
+.c-gb{
+    color: var(--grayish-blue);
+}
+.container{
+    padding-top: 15vh;
+}
+.art-preview{
+    max-width: 325px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.art-img{
+    background-image: url(./images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.art-wrapper{
+    max-width: 263px;
+    margin: auto;
+    padding-top: 36px;
+}
+.art-title{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.art-text{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    padding-top: 12px;
+}
+.art-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 263px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+}
+.art-autor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+    height: 40px;
+    padding-top: 12px;
+}
+.art-avatar{
+    max-width: 40px;
+    border-radius: 90px;
+}
+.art-autor-info{
+    padding-left: 18px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.art-share-btn{
+    background-color: var(--light-grayish-blue);
+    margin-left: auto;
+    border-radius: 90px;
+    background-image: url(./images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    z-index: 0;
+    position: relative;
+}
+.clicked{
+    background-color: var(--desaturated-dark-blue);
+    background-image: url(./images/icon-share-pressed.svg);
+}
+.art-share-btn:hover{
+    cursor: pointer;
+}
+.art-share-container{
+    position: relative;
+    bottom: 42px;
+    right: 231px;
+}
+.art-share-bg{
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    width: 325px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.art-share-content{
+    display: flex;
+    align-items: center;
+    max-width: 263px;
+    height: 64px;
+    margin: auto;
+}
+.art-share-content p{
+    letter-spacing: 5px;
+}
+.art-social-icons{
+    padding-left: 10px;
+}
+.art-social-icons img{
+    padding: 5px;
+}
+.hidden{
+    display: none;
+}
+.top-pd{
+    top:5px;
+}
+.attribution { font-size: 12px; text-align: center; padding-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:1440px) {
+    .art-preview{
+        max-width: 730px;
+        max-height: 280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .art-img{
+        min-width: 285px;
+        height: 280px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .art-wrapper{
+        max-width: 365px;
+        min-height: 216px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .art-title{
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 10px;
+    }
+    .art-text{
+        padding: 10px 0 10px 0;
+        font-weight: 500;
+    }
+    .art-footer{
+        padding: 0px;
+        margin: 0px;
+    }
+    .art-autor{
+        min-width: 365px;
+        justify-content: flex-start;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .art-share-container{
+        bottom: 118px;
+        right: 140px;
+    }
+    .art-share-bg{
+        border-radius: 10px;
+        max-width: 248px;
+        height: 55px;
+    }
+    .art-share-content{
+        justify-content: center;
+        height: 55px;
+    }
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid var(--very-dark-grayish-blue);
+        position: relative;
+        bottom: 32px;
+        left: 4px;
+    }
+    .art-share-btn-pressed{
+        top: 0px;
+    }
+    .art-share-btn{
+        right: 30px;
+    }
+
+}
