@@ -218,5 +218,7 @@ body{
     .art-share-btn{
         right: 30px;
     }
-
+    .container{
+        padding-top: 30vh;
+    }
 }

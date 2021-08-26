@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github Page](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/article-component-If8VhvrTX)
+- Live Site URL: [Github Page](https://untalpeluca.github.io/ArticlePreviewComponent/)
 
 ## My process
 
